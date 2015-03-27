@@ -1,0 +1,37 @@
+<p>
+  <strong>Name:</strong>
+  <%= @restaurant.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @restaurant.description %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @restaurant.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @restaurant.state %>
+</p>
+
+<p>
+  <strong>Zip Code:</strong>
+  <%= @restaurant.zip_code %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @restaurant.category %>
+</p>
+
+<h2>Reviews</h2>
+<div>
+<%= render @restaurant.reviews %>
+</div>
+
+<h2>Add review:</h2>
+<%= render 'reviews/form' %>
